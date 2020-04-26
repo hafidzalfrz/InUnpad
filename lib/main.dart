@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
           appBarTheme: AppBarTheme(textTheme: globalTextTheme),
-          primarySwatch: Colors.blue,
+          scaffoldBackgroundColor: Color(0xFFFFC400),
           textTheme: globalTextTheme),
-      home: RegisterView(),
+      home: AuthView(),
       onGenerateRoute: Router.generateRoute,
     );
   }

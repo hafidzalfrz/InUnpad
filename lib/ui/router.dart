@@ -6,7 +6,7 @@ class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case 'register':
-        return MaterialPageRoute(builder: (_) => RegisterView());
+        return MaterialPageRoute(builder: (_) => AuthView());
       default:
         return MaterialPageRoute(builder: (_) {
           return Scaffold(
