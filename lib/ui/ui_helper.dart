@@ -36,6 +36,7 @@ class UIHelper {
     safeBlockVertical = (screenHeight - _safeAreaVertical) / 100;
   }
 
+  //h for horizontal , v for vertical
   static Widget hSpaceXSmall() => SizedBox(width: _extraSmallSpace);
   static Widget hSpaceSmall() => SizedBox(width: _smallSpace);
   static Widget hSpaceMedium() => SizedBox(width: _mediumSpace);

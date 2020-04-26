@@ -20,7 +20,7 @@ dependencies:
   dio: any
   flushbar: 1.9.1
   shared_preferences: any
-  flutter_login: any
+  flutter_cupertino_date_picker: any
 
 dev_dependencies:
   flutter_test:
