@@ -1,4 +1,4 @@
-import 'package:inunpad/core/locator.dart';
+import 'package:inunpad/core/locators.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

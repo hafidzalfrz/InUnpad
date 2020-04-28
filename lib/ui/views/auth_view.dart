@@ -14,6 +14,20 @@ class AuthView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
+            Container(
+              width: 280,
+              height: 270,
+              margin: EdgeInsets.only(bottom: 120),
+              padding: EdgeInsets.symmetric(vertical: 40, horizontal: 60),
+              decoration: BoxDecoration(
+                  color: Color(0xFF16415A).withOpacity(0.3),
+                  shape: BoxShape.circle),
+              child: Image.asset(
+                'images/logo.png',
+                width: 150,
+                height: 200,
+              ),
+            ),
             GlobalButton(
               widthSize: 300.0,
               color: Color(0xFF16415A),
@@ -33,12 +47,14 @@ class AuthView extends StatelessWidget {
               label: 'Sign Up',
               onPressed: () {
                 showDialog(
-                    context: context,
-                    builder: (context) {
-                      return SignUp();
-                    });
+                  context: context,
+                  builder: (context) {
+                    return SignUp();
+                  },
+                );
               },
             ),
+            UIHelper.vSpaceMedium()
           ],
         ),
       )),

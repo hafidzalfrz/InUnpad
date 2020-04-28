@@ -10,9 +10,9 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+  List<String> birthDate = ['Tanggal Lahir'];
   @override
   Widget build(BuildContext context) {
-    String birthDate = 'abcd';
     return SimpleDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
       contentPadding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 30.0),
@@ -24,37 +24,36 @@ class _SignUpState extends State<SignUp> {
                 'Create New Account',
                 style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
               ),
-              UIHelper.vSpaceSmall(),
+              UIHelper.vSpaceXSmall(),
               GlobalTextField(
                 label: 'Name',
               ),
-              UIHelper.vSpaceSmall(),
+              UIHelper.vSpaceXSmall(),
               GlobalTextField(
                 label: 'Faculty',
               ),
-              UIHelper.vSpaceSmall(),
+              UIHelper.vSpaceXSmall(),
               GlobalTextField(
                 label: 'Department',
               ),
-              UIHelper.vSpaceSmall(),
+              UIHelper.vSpaceXSmall(),
               GlobalTextField(
                 label: 'Student ID',
               ),
-              UIHelper.vSpaceSmall(),
+              UIHelper.vSpaceXSmall(),
               GlobalTextField(
                 label: 'Phone Number',
                 keyboardType: TextInputType.number,
               ),
-              UIHelper.vSpaceSmall(),
+              UIHelper.vSpaceXSmall(),
               GlobalTextField(
                 label: 'User ID',
               ),
-              UIHelper.vSpaceSmall(),
               GlobalTextField(
                 label: 'Password',
                 obscureText: true,
               ),
-              UIHelper.vSpaceSmall(),
+              UIHelper.vSpaceXSmall(),
               GestureDetector(
                 onTap: () {
                   setState(() {
@@ -62,17 +61,30 @@ class _SignUpState extends State<SignUp> {
                       context,
                       onChange: (dateTime, List<int> index) {
                         setState(() {
-                          birthDate = dateTime.toString();
-                          print('$birthDate');
+                          birthDate = dateTime.toString().split(" ");
+                          print(birthDate);
+                          print(birthDate[0]);
                         });
                       },
                     );
                   });
                 },
                 child: Container(
-                  child: Text(birthDate),
+                  height: 50,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      border: Border(
+                          bottom: BorderSide(width: 1, color: Colors.grey))),
+                  child: Center(
+                    child: Text(
+                      birthDate[0],
+                      style: TextStyle(color: Colors.grey[600]),
+                    ),
+                  ),
                 ),
               ),
+              UIHelper.vSpaceXSmall(),
+              UIHelper.vSpaceXSmall(),
               GlobalButton(
                 label: 'Sign Up',
                 heightSize: 47.0,

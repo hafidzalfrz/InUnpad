@@ -5,7 +5,7 @@ import 'views/all_views.dart';
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case 'register':
+      case 'auth':
         return MaterialPageRoute(builder: (_) => AuthView());
       default:
         return MaterialPageRoute(builder: (_) {
