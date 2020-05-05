@@ -1,9 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:inunpad/ui/shared/global_button.dart';
-import 'package:inunpad/ui/ui_helper.dart';
-import 'package:inunpad/ui/widgets/sign_in.dart';
-import 'package:inunpad/ui/widgets/sign_up.dart';
 
 class Welcome extends StatelessWidget {
   @override

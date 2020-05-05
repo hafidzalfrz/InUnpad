@@ -43,6 +43,8 @@ class SignIn extends StatelessWidget {
                   widthSize: 200.0,
                   color: Color(0xFF16415A),
                   onPressed: () async {
+                    print(model.name);
+                    print(model.password);
                     Result result = await model.login();
                     model.flush(result).show(context);
                   },

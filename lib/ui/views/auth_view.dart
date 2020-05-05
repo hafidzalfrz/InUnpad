@@ -10,6 +10,7 @@ class AuthView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomPadding: false,
           body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
