@@ -89,7 +89,11 @@ packages:
       name: flutter_cupertino_date_picker
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.0.19+1"
+=======
+    version: "1.0.20"
+>>>>>>> 46f41a9d726db97e62ce8f8ebc60721f3c0e3f94
   flutter_test:
     dependency: "direct dev"
     description: flutter
