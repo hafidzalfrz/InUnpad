@@ -10,12 +10,11 @@ class AuthView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomPadding: false,
           body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-<<<<<<< HEAD
-=======
             Container(
               width: 280,
               height: 270,
@@ -30,7 +29,6 @@ class AuthView extends StatelessWidget {
                 height: 200,
               ),
             ),
->>>>>>> 46f41a9d726db97e62ce8f8ebc60721f3c0e3f94
             GlobalButton(
               widthSize: 300.0,
               color: Color(0xFF16415A),
@@ -50,14 +48,6 @@ class AuthView extends StatelessWidget {
               label: 'Sign Up',
               onPressed: () {
                 showDialog(
-<<<<<<< HEAD
-                    context: context,
-                    builder: (context) {
-                      return SignUp();
-                    });
-              },
-            ),
-=======
                   context: context,
                   builder: (context) {
                     return SignUp();
@@ -66,7 +56,6 @@ class AuthView extends StatelessWidget {
               },
             ),
             UIHelper.vSpaceMedium()
->>>>>>> 46f41a9d726db97e62ce8f8ebc60721f3c0e3f94
           ],
         ),
       )),

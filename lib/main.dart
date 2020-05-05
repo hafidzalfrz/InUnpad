@@ -28,11 +28,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: AppBarTheme(textTheme: globalTextTheme),
           scaffoldBackgroundColor: Color(0xFFFFC400),
           textTheme: globalTextTheme),
-<<<<<<< HEAD
-      home: AuthView(),
-=======
       home: Welcome(),
->>>>>>> 46f41a9d726db97e62ce8f8ebc60721f3c0e3f94
       onGenerateRoute: Router.generateRoute,
     );
   }
