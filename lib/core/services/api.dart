@@ -5,12 +5,12 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 
 class Api {
-  static String baseUrlDev = 'http://10.0.2.2:8000';
+  static String baseUrlDev = 'https://in-unpad-app.herokuapp.com';
   // AuthService _auth = locator<AuthService>();
   static BaseOptions _baseOptions = BaseOptions(
     baseUrl: baseUrlDev,
     contentType: 'application/json',
-    receiveTimeout: 5,
+    receiveTimeout: 20,
   );
   Dio dio = Dio(_baseOptions);
 

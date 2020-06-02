@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
+  convex_bottom_bar:
+    dependency: "direct main"
+    description:
+      name: convex_bottom_bar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.1"
   crypto:
     dependency: transitive
     description:
@@ -89,11 +96,7 @@ packages:
       name: flutter_cupertino_date_picker
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "1.0.19+1"
-=======
     version: "1.0.20"
->>>>>>> 46f41a9d726db97e62ce8f8ebc60721f3c0e3f94
   flutter_test:
     dependency: "direct dev"
     description: flutter

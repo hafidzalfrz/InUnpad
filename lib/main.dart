@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:inunpad/core/locators.dart';
 import 'package:inunpad/ui/router.dart';
+import 'package:inunpad/ui/views/all_views.dart';
 import 'package:inunpad/ui/views/welcome.dart';
 
 void main() async {

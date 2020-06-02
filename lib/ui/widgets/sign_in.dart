@@ -3,6 +3,7 @@ import 'package:inunpad/core/result.dart';
 import 'package:inunpad/ui/shared/global_button.dart';
 import 'package:inunpad/ui/shared/global_textfield.dart';
 import 'package:inunpad/ui/ui_helper.dart';
+import 'package:inunpad/ui/views/all_views.dart';
 import 'package:inunpad/ui/views/base_view.dart';
 import 'package:inunpad/core/viewmodels/auth_viewmodel.dart';
 
@@ -46,9 +47,12 @@ class SignIn extends StatelessWidget {
                     print(model.name);
                     print(model.password);
                     Result result = await model.login();
-                    model.flush(result).show(context);
+                    if (result.resultType == ResultType.Success)
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => Home()));
+                    else
+                      model.flush(result).show(context);
                   },
-                )
+                ),
               ],
             ),
           )

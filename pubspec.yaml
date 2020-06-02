@@ -21,6 +21,7 @@ dependencies:
   flushbar: 1.9.1
   shared_preferences: any
   flutter_cupertino_date_picker: any
+  convex_bottom_bar: any
 
 dev_dependencies:
   flutter_test:
